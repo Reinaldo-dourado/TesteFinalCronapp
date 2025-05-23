@@ -1,0 +1,229 @@
+{
+  "customId": "query753429",
+  "queryName": "GerenciarEntrada",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Entrada",
+  "entityFullName": "app.entity.Entrada",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Entrada",
+        "alias": "e",
+        "namespace": "app.entity.Entrada"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "e"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "blocklyClass": "blockly.ValidarEntrada",
+      "blocklyMethod": "Executar",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Consulta a Entidades\u003capp.entity.Entrada\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.ValidarEntrada",
+        "blocklyType": "JAVA",
+        "sourcePath": "src/main/java/blockly/ValidarEntrada.blockly",
+        "language": "java",
+        "class": "blockly.ValidarEntrada",
+        "methods": [
+          {
+            "name": "Executar",
+            "hasReturn": "true",
+            "params": [
+              "Consulta a Entidades\u003capp.entity.Entrada\u003e"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": null,
+    "beforeDelete": {
+      "type": "server",
+      "blocklyMethod": "depoisDeDeletar",
+      "blocklyClass": "blockly.GerenciarEntrada",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Consulta a Entidades\u0026lt;app.entity.Entrada\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.GerenciarEntrada",
+        "sourcePath": "src/main/java/blockly/GerenciarEntrada.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "depoisDeDeletar",
+            "hasReturn": "true",
+            "params": [
+              "Consulta a Entidades\u0026lt;app.entity.Entrada\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "afterInsert": {
+      "type": "server",
+      "blocklyMethod": "AtualizaEstoque",
+      "blocklyClass": "blockly.Bloco",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Consulta a Entidades\u0026lt;app.entity.Entrada\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.Bloco",
+        "sourcePath": "src/main/java/blockly/Bloco.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "AtualizaEstoque",
+            "hasReturn": "true",
+            "params": [
+              "Consulta a Entidades\u0026lt;app.entity.Entrada\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "fk_user": {
+      "type": "server",
+      "blocklyMethod": "BuscaUsuarioLogado",
+      "blocklyClass": "blockly.UserManager",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.UserManager",
+        "sourcePath": "src/main/java/blockly/UserManager.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "BeforeInsert",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeUpdate",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeDelete",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "Normalize",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BuscaUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "fk_produto": null,
+    "qtdEntrada": null,
+    "data": null,
+    "fk_user_name": null,
+    "fk_produto_nomeProduto": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "fk_user": null,
+    "fk_produto": null,
+    "qtdEntrada": null,
+    "data": null,
+    "fk_user_name": null,
+    "fk_produto_nomeProduto": null
+  },
+  "security": {
+    "id": null,
+    "fk_user": null,
+    "fk_produto": null,
+    "qtdEntrada": null,
+    "data": null,
+    "fk_user_name": null,
+    "fk_produto_nomeProduto": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query753429/",
+  "audit": false,
+  "swagger": false
+}

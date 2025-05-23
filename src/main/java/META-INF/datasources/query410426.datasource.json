@@ -1,0 +1,203 @@
+{
+  "customId": "query410426",
+  "queryName": "GerenciarSaida",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Saida",
+  "entityFullName": "app.entity.Saida",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Saida",
+        "alias": "s",
+        "namespace": "app.entity.Saida"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "s"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "blocklyClass": "blockly.BlocoSaida",
+      "blocklyMethod": "AntesdeInserirValidaQtd",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Consulta a Entidades\u003capp.entity.Saida\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.BlocoSaida",
+        "blocklyType": "JAVA",
+        "sourcePath": "src/main/java/blockly/BlocoSaida.blockly",
+        "language": "java",
+        "class": "blockly.BlocoSaida",
+        "methods": [
+          {
+            "name": "AntesdeInserirValidaQtd",
+            "hasReturn": "true",
+            "params": [
+              "Consulta a Entidades\u003capp.entity.Saida\u003e"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": null,
+    "beforeDelete": {
+      "type": "server",
+      "blocklyMethod": "AntesDeDeletarAtualizar",
+      "blocklyClass": "blockly.AntesDeDeletar",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Consulta a Entidades\u0026lt;app.entity.Saida\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.AntesDeDeletar",
+        "sourcePath": "src/main/java/blockly/AntesDeDeletar.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "AntesDeDeletarAtualizar",
+            "hasReturn": "true",
+            "params": [
+              "Consulta a Entidades\u0026lt;app.entity.Saida\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "fk_user": {
+      "type": "server",
+      "blocklyMethod": "BuscaUsuarioLogado",
+      "blocklyClass": "blockly.UserManager",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.UserManager",
+        "sourcePath": "src/main/java/blockly/UserManager.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "BeforeInsert",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeUpdate",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeDelete",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "Normalize",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.User\u0026gt;"
+            ]
+          },
+          {
+            "name": "BuscaUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "fk_produto": null,
+    "qtdSaida": null,
+    "data": null,
+    "fk_user_name": null,
+    "fk_produto_nomeProduto": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "fk_user": null,
+    "fk_produto": null,
+    "qtdSaida": null,
+    "data": null,
+    "fk_user_name": null,
+    "fk_produto_nomeProduto": null
+  },
+  "security": {
+    "id": null,
+    "fk_user": null,
+    "fk_produto": null,
+    "qtdSaida": null,
+    "data": null,
+    "fk_user_name": null,
+    "fk_produto_nomeProduto": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query410426/",
+  "audit": false,
+  "swagger": false
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="src/main/webapp/views/logged/TesteBlocoHIghCode.view.html" functionCategory="" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="Bloco" ruleName="Bloco" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="482.0000000000007" scrolly="-59.899999999999636" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-350" y="130">
+    <mutation>
+      <arg id="e499e9f5" name="numero1"/>
+      <arg id="4af2e53e" name="numero2"/>
+    </mutation>
+    <field customattributes="" name="NAME">ExecutarSoma</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5OWuB=]em%zWEwuvNAbg" multilayer="false" namespace="cronapi.util.callServerBlocklyAsynchronous" origintype="procedures_callblockly_callreturn_async" output="false" returntype="ObjectType.OBJECT" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20bloco%20servidor%20ass%C3%ADncrono%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EChamar%20bloco%20servidor%20ass%C3%ADncrono%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20da%20fun%C3%A7%C3%A3o%20do%20bloco%20que%20dever%C3%A1%20ser%20chamada%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Fun%C3%A7%C3%A3o%20que%20dever%C3%A1%20ser%20executada,%20quando%20finalizar%20a%20execu%C3%A7%C3%A3o%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.callServerBlocklyAsynchronous','cronapi.util.callServerBlocklyAsynchronous')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn_async" valueconstant="">
+        <mutation data="%7B%22name%22:%22BlocoHighCodeTeste%22,%22class%22:%22blockly.BlocoHighCodeTeste%22,%22function%22:%22ExecutarSoma%22,%22oldName%22:%22ExecutarSoma%22,%22params%22:%22%5B%5C%22numero1%5C%22,%5C%22numero2%5C%22%5D%22,%22argumentsIds%22:%5B%22e4e624a8%22,%221fa6c38f%22%5D,%22type%22:%22java%22,%22namespace%22:%22blockly.BlocoHighCodeTeste%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.BlocoHighCodeTeste%22,%22blocklyType%22:%22JAVA%22,%22sourcePath%22:%22src/main/java/blockly/BlocoHighCodeTeste.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.BlocoHighCodeTeste%22,%22methods%22:%5B%7B%22name%22:%22ExecutarSoma%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22numero1%22,%22numero2%22%5D,%22paramsMap%22:%7B%22numero1%22:%22e4e624a8%22,%22numero2%22:%221fa6c38f%22%7D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlocklyAsynchronous}}">
+          <arg id="e4e624a8" name="numero1"/>
+          <arg id="1fa6c38f" name="numero2"/>
+        </mutation>
+        <field customattributes="" name="VAR_SENDERSTATEMENTSENDER">item</field>
+        <value name="ARG0">
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="O]wLcv)7Pl9O:v3v!SeY" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+            <field customattributes="" name="VAR">numero1</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="[aPzT)hxtmxyIYEM7[~G" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+            <field customattributes="" name="VAR">numero2</field>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="P6.H+})e%SQRYvf?g}vn" multilayer="false" namespace="cronapi.notification.customNotify" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%20simples%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%20simples%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Estado%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3Cspan%3E%20-%20Anima%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Posi%C3%A7%C3%A3o%20vertical%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Posi%C3%A7%C3%A3o%20horizontal%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Ocultar%20notifica%C3%A7%C3%A3o%20automaticamente%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.customNotify','cronapi.notification.customNotify')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn" valueconstant="">
+            <mutation name="{{cronapi.notification.customNotify}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Estado"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Mensagem"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Animação"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Posição vertical"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Posição horizontal"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Ocultar notificação automaticamente"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="zPAQi3^W{n$mYku^,fW7" origintype="util_dropdown" output="true" score="9007199254740991" type="util_dropdown" valueconstant="">
+                <mutation>
+                  <arg name="error" value="Erro"/>
+                  <arg name="success" value="Sucesso"/>
+                  <arg name="warning" value="Aviso"/>
+                  <arg name="info" value="Informação"/>
+                </mutation>
+                <field customattributes="" name="SELECT">success</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="8y|A:)^B!WC(Rhl0;Hr+" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                <field customattributes="" name="TEXT"/>
+              </shadow>
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="!X~He3K}OoEi|logs*d:" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">item</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="p8p:/XQ?G=.NAH#`;0Iz" origintype="util_dropdown" output="true" score="9007199254740991" type="util_dropdown" valueconstant="">
+                <mutation>
+                  <arg name="fade" value="Desaparecer"/>
+                  <arg name="slide" value="Deslizar"/>
+                  <arg name="zoom" value="Zoom"/>
+                </mutation>
+                <field customattributes="" name="SELECT">fade</field>
+              </block>
+            </value>
+            <value name="ARG3">
+              <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="c^!`#}aSCv64K@Z*hK|9" origintype="util_dropdown" output="true" score="9007199254740991" type="util_dropdown" valueconstant="">
+                <mutation>
+                  <arg name="top" value="Topo"/>
+                  <arg name="bottom" value="Embaixo"/>
+                </mutation>
+                <field customattributes="" name="SELECT">top</field>
+              </block>
+            </value>
+            <value name="ARG4">
+              <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="PVcRZOdyk-t^`ps2AFn!" origintype="util_dropdown" output="true" score="9007199254740991" type="util_dropdown" valueconstant="">
+                <mutation>
+                  <arg name="left" value="Esquerda"/>
+                  <arg name="center" value="Central"/>
+                  <arg name="right" value="Direita"/>
+                </mutation>
+                <field customattributes="" name="SELECT">left</field>
+              </block>
+            </value>
+            <value name="ARG5">
+              <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="k8l[*6dp]EHLTr1%J@o," origintype="util_dropdown" output="true" score="9007199254740991" type="util_dropdown" valueconstant="">
+                <mutation>
+                  <arg name="true" value="Sim"/>
+                  <arg name="false" value="Não"/>
+                </mutation>
+                <field customattributes="" name="SELECT">true</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</blockly>
